@@ -1,0 +1,7 @@
+name 'github'
+version '0.1.0'
+author 'Chris Laskey'
+summary 'Clone a github repository and keep it in sync'
+description 'Clone a github repository and keep it in sync with the main branch on github.'
+license 'MIT License (http://opensource.org/licenses/MIT)'
+project_page 'http://github.com/chrislaskey'
