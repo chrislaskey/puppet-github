@@ -54,7 +54,7 @@ pull_latest_from_github () {
 	# -	Connectivity issues
 	# Rather than try to catch each, let command fail and output errors.
 
-	if ! git pull "$remote_name" "$remote_branch":"$remote_branch"; then
+	if ! git --git-dir "$target_repo" pull "$remote_name" "$remote_branch":"$remote_branch"; then
 		echo "git --git-dir ${target_repo} pull ${remote_name} ${remote_branch}:${remote_branch};"
 		error "Repository already exists locally. Failed to pull latest version from github."
 	fi
